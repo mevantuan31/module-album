@@ -1,0 +1,29 @@
+[Fri, 04 Dec 2020 16:29:18 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baithivinades.nv4_product' doesn't exist in C:\xampp\htdocs\baithivinades\vendor\vinades\nukeviet\Core\Database.php:495
+Stack trace:
+#0 C:\xampp\htdocs\baithivinades\vendor\vinades\nukeviet\Core\Database.php(495): PDO->query('SELECT COUNT(*)...')
+#1 C:\xampp\htdocs\baithivinades\modules\album\funcs\search.php(44): NukeViet\Core\Database->query('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\baithivinades\index.php(343): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 495]
+[Fri, 04 Dec 2020 16:31:15 +0700] [localhost] [::1] [Notice(8): Undefined variable: array_row] [FILE: /modules/album/funcs/search.php] [LINE: 47] [TRACE:]
+#1  LINE: 343   FILE: /index.php
+
+[Fri, 04 Dec 2020 16:39:18 +0700] [localhost] [::1] [Notice(8): Undefined index: order_id] [FILE: /modules/album/admin/detail_categories.php] [LINE: 78] [TRACE:]
+#1  LINE: 175   FILE: /admin/index.php
+
+[Fri, 04 Dec 2020 16:39:21 +0700] [localhost] [::1] [Notice(8): Undefined index: basename] [FILE: /modules/album/admin/img.php] [LINE: 33] [TRACE:]
+#1  LINE: 175   FILE: /admin/index.php
+
+[Fri, 04 Dec 2020 16:39:21 +0700] [localhost] [::1] [Notice(8): Undefined index: id_album] [FILE: /modules/album/admin/img.php] [LINE: 69] [TRACE:]
+#1  LINE: 175   FILE: /admin/index.php
+
+[Fri, 04 Dec 2020 16:39:27 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'create_at' in 'field list' in C:\xampp\htdocs\baithivinades\vendor\vinades\nukeviet\Core\Database.php:520
+Stack trace:
+#0 C:\xampp\htdocs\baithivinades\vendor\vinades\nukeviet\Core\Database.php(520): PDO->prepare('INSERT INTO `nv...', Array)
+#1 C:\xampp\htdocs\baithivinades\modules\album\admin\img.php(52): NukeViet\Core\Database->prepare('INSERT INTO `nv...')
+#2 C:\xampp\htdocs\baithivinades\admin\index.php(175): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 520]
+[Fri, 04 Dec 2020 16:44:24 +0700] [localhost] [::1] [Notice(8): Undefined index: basename] [FILE: /modules/album/admin/categories.php] [LINE: 33] [TRACE:]
+#1  LINE: 175   FILE: /admin/index.php
+
